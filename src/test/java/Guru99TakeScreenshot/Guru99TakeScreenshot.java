@@ -57,7 +57,8 @@ public class Guru99TakeScreenshot {
                 //Copy file at destination
 
                 FileUtils.copyFile(SrcFile, DestFile);
-
+                
+                System.out.println("Taking screenshot: " + DestFile.getCanonicalPath());
     }
 
 }
