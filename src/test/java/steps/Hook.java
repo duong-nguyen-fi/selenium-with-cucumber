@@ -30,9 +30,7 @@ public class Hook extends BaseUtil{
 
         System.out.println("Opening the browser : Firefox");
         DesiredCapabilities caps = DesiredCapabilities.firefox();
-        caps.setCapability("platform", Platform.LINUX);
         caps.setJavascriptEnabled(true);
-        caps.setVersion("61.0.2");
         
         //Chrome driver
         //System.setProperty("webdriver.chrome.driver", "C:\\Libs\\chromedriver.exe");
