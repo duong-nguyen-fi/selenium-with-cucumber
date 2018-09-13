@@ -13,7 +13,7 @@ hs_err_pid*
 
 .idea/*.xml
 .classpath
-/.project/**
+.project
 /.settings/
 *.iml
 /target/
