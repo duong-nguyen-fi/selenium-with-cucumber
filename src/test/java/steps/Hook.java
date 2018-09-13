@@ -29,9 +29,10 @@ public class Hook extends BaseUtil{
     @Before
     public void InitializeTest() throws MalformedURLException {
 
-        System.out.println("Opening the browser : Firefox");
+        System.out.println("Opening the browser : Chrome");
         DesiredCapabilities caps = new DesiredCapabilities();
-        caps.setBrowserName(BrowserType.FIREFOX);
+        caps.setBrowserName(BrowserType.CHROME);
+        caps.setPlatform(Platform.LINUX);
         
         //Chrome driver
         //System.setProperty("webdriver.chrome.driver", "C:\\Libs\\chromedriver.exe");
