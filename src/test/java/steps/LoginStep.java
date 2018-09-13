@@ -68,7 +68,7 @@ public class LoginStep extends BaseUtil{
     @Then("^I should see the userform page wrongly$")
     public void iShouldSeeTheUserformPageWrongly() throws Throwable {
 
-        Assert.assertEquals("Its displayed", base.Driver.findElement(By.id("cssmenu")).isDisplayed(), false);
+        Assert.assertEquals("Its displayed", base.Driver.findElement(By.id("cssmenu")).isDisplayed(), true);
     }
 
 
