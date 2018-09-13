@@ -33,6 +33,7 @@ public class Hook extends BaseUtil{
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setBrowserName(BrowserType.CHROME);
         caps.setPlatform(Platform.LINUX);
+        caps.setVersion("69.0.3497.81");
         
         //Chrome driver
         //System.setProperty("webdriver.chrome.driver", "C:\\Libs\\chromedriver.exe");
@@ -45,7 +46,7 @@ public class Hook extends BaseUtil{
         if (scenario.isFailed()) {
             //Take screenshot logic goes here
         	try {
-				Guru99TakeScreenshot.takeSnapShot(base.Driver, "c://test.png");
+				Guru99TakeScreenshot.takeSnapShot(base.Driver, "test.png");
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
