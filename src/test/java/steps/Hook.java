@@ -4,6 +4,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 import org.openqa.selenium.Platform;
+import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
@@ -29,8 +30,8 @@ public class Hook extends BaseUtil{
     public void InitializeTest() throws MalformedURLException {
 
         System.out.println("Opening the browser : Firefox");
-        DesiredCapabilities caps = DesiredCapabilities.firefox();
-        caps.setJavascriptEnabled(true);
+        DesiredCapabilities caps = new DesiredCapabilities();
+        caps.setBrowserName(BrowserType.FIREFOX);
         
         //Chrome driver
         //System.setProperty("webdriver.chrome.driver", "C:\\Libs\\chromedriver.exe");
